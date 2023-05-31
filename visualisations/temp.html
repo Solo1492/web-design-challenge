@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Add a title here -->
+  <title>Cloudiness</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+</head>
+
+<body>
+  <!-- Start of navbar -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+      <a class="navbar-brand" href="../index.html" style="color: green; font-weight: bold;">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../comparison.html" style="color: black;">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data.html" style="color: black;">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End of navbar -->
+
+  <!-- Start of container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 class="title">Max Temperature</h3>
+          <hr>
+          <img class="visualimage" src="../assets/images/Fig1.png" alt="Temperature Graph">
+          <p>
+            <br>
+            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+          More interestingly, however, is the fact that the northern hemisphere tends to be warmer this time of the year than the southern hemisphere.
+          This may be due to the tilt of the Earth at the time of the year this data was gathered. 
+            <br>
+          </p>
+        </div>
+      </div>
+      <!-- Start of Visualizations imageNav Area -->
+      <div class="col-lg-5 col-md-12">
+        <div class="box">
+          <h4 class="title">Visualizations</h4>
+          <hr>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-6 col-md-12 col-lg-6">
+                <a href="temp.html">
+                  <img class="panel" src="../assets/images/Fig1.png" alt="Max Temperature Graph" width="100%"
+                    height="auto">
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-12 col-lg-6">
+                <a href="humidity.html">
+                  <img class="panel" src="../assets/images/Fig2.png" alt="Humidity Graph" width="100%" height="auto">
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-12 col-lg-6">
+                <a href="cloudiness.html">
+                  <img class="panel" src="../assets/images/Fig3.png" alt="Cloudiness Graph" width="100%" height="auto">
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-12 col-lg-6">
+                <a href="wind.html">
+                  <img class="panel" src="../assets/images/Fig4.png" alt="Wind Speed Graph" width="100%" height="auto">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- End of the Visualisations imageNav Area -->
+        </div>
+      </div>
+      <!-- End of Visualisations imageNav Area -->
+    </div>
+  </div>
+  <!-- End of container -->
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
